@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RevoU-Project-Anisa-Fitri</title>
+    <title>SweetBite Bakery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">SweetBite</div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <ul id="menu-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Rasakan Manisnya Setiap Gigitan</h1>
+            <p>Bakery dengan rasa terbaik untuk menemani harimu</p>
+            <a href="#products" class="btn">Lihat Produk</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah bakery lokal yang menghadirkan roti, kue, dan pastry berkualitas tinggi. <br> Semua dibuat dengan
+            bahan pilihan terbaik dan tanpa pengawet, sehingga aman dan lezat untuk semua.</p>
+        <p>Sejak berdiri, SweetBite telah menjadi pilihan favorit keluarga untuk sarapan, camilan sore, hingga kue
+            spesial untuk perayaan.</p>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products">
+        <h2>Produk Kami</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/Chocolate Cake.jpeg" alt="Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Kue cokelat lembut dengan lapisan ganache premium.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/Fresh Bread.jpeg" alt="Bread">
+                <h3>Fresh Bread</h3>
+                <p>Roti hangat dengan aroma khas dan tekstur empuk.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/Vanilla Cupcake.jpeg" alt="Cupcake">
+                <h3>Vanilla Cupcake</h3>
+                <p>Cupcake manis dengan frosting vanilla lembut.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/Butter Croissant.jpeg" alt="Croissant">
+                <h3>Butter Croissant</h3>
+                <p>Croissant renyah berlapis dengan mentega asli.</p>
+            </div> 
+            <div class="product-item">
+                <img src="images/Strawberry Donut.jpeg" alt="Donut">
+                <h3>Strawberry Donut</h3>
+                <p>Donat empuk dengan glaze stroberi segar.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/Fruit Tart.jpg" alt="Tart">
+                <h3>Fruit Tart</h3>
+                <p>Tart renyah berisi krim dan buah segar.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/Choco Cookies.jpeg" alt="Cookies">
+                <h3>Choco Cookies</h3>
+                <p>Kue kering cokelat dengan potongan choco chips.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/Blueberry Muffin.jpg" alt="Muffin">
+                <h3>Blueberry Muffin</h3>
+                <p>Muffin lembut berisi blueberry manis.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Hubungi Kami</h2>
+        <p>Pesan sekarang melalui WhatsApp kami</p>
+        <a href="https://wa.me/6285371198360" class="btn" target="_blank">Pesan via WhatsApp</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 SweetBite Bakery. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuList = document.getElementById('menu-list');
+
+        menuToggle.addEventListener('click', () => {
+            menuList.classList.toggle('active');
+        });
+    </script>
+
 </body>
+
 </html>
