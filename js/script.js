@@ -14,10 +14,12 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
     let nama = document.getElementById("nama").value.trim();
+    let tanggalLahir = document.getElementById("tanggalLahir").value;
     let email = document.getElementById("email").value.trim();
+    let gender = document.querySelector('input[name="gender"]:checked')?.value;
     let pesan = document.getElementById("pesan").value.trim();
 
-    if (nama === "" || email === "" || pesan === "") {
+    if (!nama || !tanggalLahir || !email || !gender || !pesan) {
         alert("Semua field harus diisi!");
         return;
     }
@@ -27,11 +29,15 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     let newRow = table.insertRow();
 
     let cellNama = newRow.insertCell(0);
-    let cellEmail = newRow.insertCell(1);
-    let cellPesan = newRow.insertCell(2);
+    let cellTanggalLahir = newRow.insertCell(1);
+    let cellEmail = newRow.insertCell(2);
+    let celGender = newRow.insertCell(3);
+    let cellPesan = newRow.insertCell(4);
 
     cellNama.textContent = nama;
+    cellTanggalLahir.textContent = tanggalLahir;
     cellEmail.textContent = email;
+    celGender.textContent = gender;
     cellPesan.textContent = pesan;
 
     // Reset form

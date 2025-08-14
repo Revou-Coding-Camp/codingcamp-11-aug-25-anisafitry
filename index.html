@@ -120,11 +120,20 @@
             <label>Nama:</label>
             <input type="text" id="nama" name="nama" required>
 
+            <label>Tanggal Lahir:</label>
+            <input type="date" id="tanggalLahir" required>
+
             <label>Email:</label>
             <input type="email" id="email" name="email" required>
 
+            <label>Jenis Kelamin:</label>
+            <div class="gender-group">
+                <label><input type="radio" name="gender" value="Laki-laki" required>Laki-laki</label>
+                <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+            </div>
+
             <label>Pesan:</label>
-            <textarea id="pesan" name="pesan" required></textarea>
+            <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda..." required></textarea>
 
             <button type="submit">Kirim Pesan</button>
         </form>
@@ -137,7 +146,9 @@
                 <thead>
                     <tr>
                         <th>Nama</th>
+                        <th>Tanggal Lahir</th>
                         <th>Email</th>
+                        <th>Jenis Kelamin</th>
                         <th>Pesan</th>
                     </tr>
                 </thead>
